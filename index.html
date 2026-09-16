@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang=en>
+<head>
+  <meta charset=UTF-8>
+  <meta name=viewport content=width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no>
+  <title>Fotafot Scanner — Download</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+    body {
+      background: #0b0f19;
+      color: #f3f4f6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px 16px;
+      text-align: center;
+    }
+    .container {
+      background: rgba(22, 30, 49, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 24px;
+      padding: 32px 24px;
+      max-width: 440px;
+      width: 100%;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(20px);
+    }
+    .logo-box {
+      width: 72px;
+      height: 72px;
+      background: linear-gradient(135deg, #10b981, #059669);
+      border-radius: 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+      box-shadow: 0 10px 25px rgba(16, 185, 129, 0.35);
+    }
+    .logo-box svg { width: 38px; height: 38px; fill: white; }
+    .badge {
+      display: inline-block;
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: rgba(16, 185, 129, 0.18);
+      color: #34d399;
+      font-size: 11px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+    h1 { font-size: 24px; font-weight: 800; margin-bottom: 8px; letter-spacing: -0.5px; }
+    p.subtitle { font-size: 14px; color: #9ca3af; line-height: 1.5; margin-bottom: 24px; }
+    .btn-download {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      padding: 16px 20px;
+      border-radius: 14px;
+      font-size: 16px;
+      font-weight: 700;
+      color: #ffffff;
+      background: #10b981;
+      text-decoration: none;
+      box-shadow: 0 8px 24px rgba(16, 185, 129, 0.4);
+      transition: all 0.2s ease;
+      margin-bottom: 16px;
+    }
+    .btn-download:hover { background: #059669; }
+    .btn-download:active { transform: scale(0.98); }
+    .ios-box {
+      margin-top: 10px;
+      padding: 14px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 13px;
+      color: #94a3b8;
+    }
+    .ios-box a {
+      color: #38bdf8;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+    .steps {
+      margin-top: 24px;
+      text-align: left;
+      background: rgba(10, 15, 26, 0.55);
+      padding: 20px 18px;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .steps h3 { font-size: 14px; color: #34d399; margin-bottom: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+    .step-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 12px;
+      font-size: 13px;
+      color: #cbd5e1;
+      line-height: 1.4;
+    }
+    .step-item:last-child { margin-bottom: 0; }
+    .step-num {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: rgba(16, 185, 129, 0.2);
+      color: #34d399;
+      font-size: 12px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class=container>
+    <div class=logo-box>
+      <svg viewBox=0 0 24 24><path d=M4 4h3l2-2h6l2 2h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm8 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z/></svg>
+    </div>
+    <br>
+    <span class=badge>Official Companion App</span>
+    <h1>Fotafot Scanner</h1>
+    <p class=subtitle>High-speed native camera companion for Fotafot Desktop.</p>
+
+    <!-- Download button pointing to direct GitHub release APK -->
+    <a href=https://github.com/RahatMurshed/fotafot-app/releases/download/v1.0.0/Fotafot_Scanner.apk class=btn-download id=apk-btn>
+      <svg width=22 height=22 viewBox=0 0 24 24 fill=none stroke=currentColor stroke-width=2.5><path d=M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3/></svg>
+      Download for Android (.apk)
+    </a>
+
+    <div class=ios-box>
+      <span>Using an <strong>iPhone</strong>? Connect via WiFi and scan the PC's pairing QR code directly in Safari.</span>
+    </div>
+
+    <div class=steps>
+      <h3>Quick 3-Step Setup</h3>
+      <div class=step-item>
+        <div class=step-num>1</div>
+        <div>Tap <strong>Download for Android</strong> above and tap <strong>Install</strong> when prompted.</div>
+      </div>
+      <div class=step-item>
+        <div class=step-num>2</div>
+        <div>Open the <strong>Fotafot Scanner</strong> app on your phone.</div>
+      </div>
+      <div class=step-item>
+        <div class=step-num>3</div>
+        <div>Point your phone at the <strong>Connect QR code</strong> on your computer screen to pair!</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
